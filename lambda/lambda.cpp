@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 /**
- * Lambda expression allow us to write inline functions that can be used for short snippets of code that are not going to
+ * Lambda expressions allow us to write inline functions that can be used for short snippets of code that are not going to
  * be reused and therefor are not worth naming.
  *
  */
@@ -9,7 +9,7 @@
 void printVector(std::vector<int> v){
     std::for_each(v.begin(), v.end(), [](int i){
         std::cout << i << " ";
-    });
+    }) ;
     std::cout << std::endl;
 }
 
