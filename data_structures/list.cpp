@@ -11,12 +11,13 @@
  * Time Complexity:
  * Access - front():            O(1) - constant
  *        - back():             O(1) - constant
+ *        - by iteration        O(n) - linear
  *
- * Insert - insert():           O(n) - linear
+ * Insert - insert():           O(1) - constant (you need to iterate to the desired position first though)
  *        - push_front():       O(1) - constant
  *        - push_back():        O(1) - constant
  *
- * Erase - erase():             O(n) - linear
+ * Erase - erase():             O(1) - constant (you need to iterate to the desired position first though)
  *       - pop_front():         O(1) - constant
  *       - pop_back():          O(1) - constant
  */
@@ -43,6 +44,7 @@ int main(){
     std::cout << "After insert: ";
     printList(myList);
 
+    //update it since insert() invalidates iterators
     it = myList.begin(); //points to 1
     it++; //points to 2
     myList.erase(it);

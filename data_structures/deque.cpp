@@ -47,6 +47,7 @@ int main(){
     std::cout << "After insert: ";
     printDeque(myDeque);
 
+    //update it since insert() invalidates iterators
     it = myDeque.begin(); //points to 1
     it++; //points to 2
     myDeque.erase(it);

@@ -39,6 +39,7 @@ int main(){
     std::cout << "After insert: ";
     printMap(myMap);
 
+    //update it since insert() invalidates iterators
     it = myMap.begin(); //points to 1
     it++; //points to 2
     myMap.erase(it);

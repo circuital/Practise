@@ -34,6 +34,7 @@ int main(){
     std::cout << "After insert: ";
     printSet(mySet);
 
+    //update it since insert() invalidates iterators
     it = mySet.begin(); //points to 1
     it++; //points to 2
     mySet.erase(it);

@@ -45,6 +45,7 @@ int main(){
     std::cout << "After insert: ";
     printVector(myVector);
 
+    //update it since insert() invalidates iterators
     it = myVector.begin(); //points to 1
     it++; //points to 2
     myVector.erase(it);
